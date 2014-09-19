@@ -12,7 +12,9 @@ function onDeviceReady()
 {
   navigator.globalization.dateToString(
     new Date(),
-    function (date) { alert('date: ' + date.value + '\n'); },
+    function (date) {  
+      var element = document.getElementById('info');
+      element.innerHTML = "Date: " + date.value + '\n';},
     function () { alert('Error getting dateString\n'); },
     { formatLength: 'short', selector: 'date and time' }
 );
