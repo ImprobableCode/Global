@@ -13,24 +13,15 @@ function onDeviceReady()
   navigator.globalization.dateToString(new Date(),function (date) {  
       var element = document.getElementById('info');
       element.innerHTML = "Date: " + date.value + '\n';
-      var addition = 10;
-      var a = date.value;
-      var b = (a + addition);
-
-      var element = document.getElementById('info2');
-      element.innerHTML = "Date: " + b + '\n';
     },
     function () { alert('Error getting dateString\n'); },
     { formatLength: 'short', selector: 'time' });
-
 }
-
-
     </script>
   </head>
   <body>
     <p id="info">info1..</p>
-      <p id="info2">info2</p>
+       <p id="info2">info1..</p>
 
   </body>
 </html>
