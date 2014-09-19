@@ -16,7 +16,24 @@ function onDeviceReady()
     },
     function () { alert('Error getting dateString\n'); },
     { formatLength: 'short', selector: 'time' });
+
+
+
+navigator.globalization.getNumberPattern(
+    function (pattern)  var element2 = document.getElementById('info2');
+      element2.innerHTML = "Date: " + date.value + '\n';{alert('pattern: '  + pattern.pattern  + '\n' +
+                              'symbol: '   + pattern.symbol   + '\n' +
+                              'fraction: ' + pattern.fraction + '\n' +
+                              'rounding: ' + pattern.rounding + '\n' +
+                              'positive: ' + pattern.positive + '\n' +
+                              'negative: ' + pattern.negative + '\n' +
+                              'decimal: '  + pattern.decimal  + '\n' +
+                              'grouping: ' + pattern.grouping);},
+    function () {alert('Error getting pattern\n');},
+    {type:'decimal'}
+);
 }
+
     </script>
   </head>
   <body>
