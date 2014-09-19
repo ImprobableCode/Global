@@ -13,8 +13,8 @@ function onDeviceReady()
   navigator.globalization.dateToString(new Date(),function (date) {  
       var element = document.getElementById('info');
       element.innerHTML = "Date: " + date.value + '\n';
-
-      var math = (date.value + 10);
+      var addition =10;
+      var math = (date.value + addition);
 
       var element = document.getElementById('info2');
       element.innerHTML = "Date: " + math + '\n';
