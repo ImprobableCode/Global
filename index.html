@@ -14,13 +14,11 @@ function onDeviceReady()
       var element = document.getElementById('info');
       element.innerHTML = "Date: " + date.value + '\n';
 
-      var math = date.value;
+      var math = date.value + 10;
 
       var element = document.getElementById('info2');
-      element.innerHTML = "Date: " + (math+10) + '\n';},
-
+      element.innerHTML = "Date: " + math + '\n';
     },
-
     function () { alert('Error getting dateString\n'); },
     { formatLength: 'short', selector: 'time' });
 
