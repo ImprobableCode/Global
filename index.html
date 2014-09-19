@@ -20,9 +20,9 @@ function onDeviceReady()
 
 
 navigator.globalization.getNumberPattern(
-    function (pattern)  var element2 = document.getElementById('info2');
-      element2.innerHTML = "Date: " + date.value + '\n';{alert('pattern: '  + pattern.pattern  + '\n' +
-                              'symbol: '   + pattern.symbol   + '\n' +
+    function (pattern)  {
+      var element2 = document.getElementById('info2');
+      element2.innerHTML =    'symbol: '   + pattern.symbol   + '\n' +
                               'fraction: ' + pattern.fraction + '\n' +
                               'rounding: ' + pattern.rounding + '\n' +
                               'positive: ' + pattern.positive + '\n' +
