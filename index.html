@@ -16,23 +16,9 @@ function onDeviceReady()
       var element = document.getElementById('info');
       element.innerHTML = "Date: " + date.value + '\n';},
     function () { alert('Error getting dateString\n'); },
-    { formatLength: 'short', selector: 'date and time' }
-);
+    { formatLength: 'short', selector: 'time' });
 }
 
- function onSuccess(contacts) 
-               
-     {
-
-
-     
-      }
-           
-function onError() 
-{
-  var element = document.getElementById('info');
-  element.innerHTML = "ERROR";
-}
 
     </script>
   </head>
